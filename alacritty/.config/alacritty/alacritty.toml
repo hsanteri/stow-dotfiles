@@ -1,0 +1,8 @@
+# alacritty config
+
+[window]
+    opacity = 0.65
+
+[font]
+    normal = { family = "JetBrains Mono", style = "Regular" }
+    size = 16
