@@ -83,7 +83,7 @@ symbol = ".NET "
 
 [directory]
 read_only = " ro"
-style = "#f9e2af"
+style = "#a6e3a1"
 
 [docker_context]
 symbol = "docker "
