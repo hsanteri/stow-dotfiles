@@ -3,12 +3,19 @@ $username\
 $directory\
 $git_branch\
 $git_status\
+$cmd_duration\
+$line_break\
 """
 add_newline = false
+
+[cmd_duration]
+format = "[$duration]($style) "
+style = "#f5e0dc"
 
 [username]
 show_always = true
 style_user = "fg:#eba0ac"
+style_root = "fg:#f38ba8"
 disabled = false
 
 [character]
