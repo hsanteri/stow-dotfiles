@@ -1,5 +1,10 @@
 # alacritty config
 
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/gruvbox_material_hard_dark.toml"
+    ]
+
 [window]
     opacity = 0.65
 
