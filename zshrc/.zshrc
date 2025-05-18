@@ -3,11 +3,12 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 # End of lines configured by zsh-newuser-install
+
 autoload -Uz compinit promptinit
 compinit
 promptinit
 
-prompt walters
+prompt elite 
 
 [[ $- != *i* ]] && return
 
