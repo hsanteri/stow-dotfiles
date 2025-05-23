@@ -8,6 +8,8 @@ autoload -Uz compinit promptinit
 compinit
 promptinit
 
+#export PATH="$HOME/.local/bin:$PATH"
+
 prompt elite 
 
 [[ $- != *i* ]] && return
