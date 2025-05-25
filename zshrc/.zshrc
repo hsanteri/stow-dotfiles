@@ -14,6 +14,7 @@ prompt elite
 
 [[ $- != *i* ]] && return
 
+alias hyprconf='nvim ~/.config/hypr/hyprland.conf'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias mpv-hdr='ENABLE_HDR_WSI=1 mpv --vo=gpu-next --target-colorspace-hint --gpu-api=vulkan --gpu-context=waylandvk'
@@ -29,3 +30,4 @@ function y() {
     fi
     rm -f -- "$tmp"
 }
+eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/config.omp.json)"

@@ -16,3 +16,5 @@ set.clipboard:append("unnamedplus")
 
 set.ignorecase = true
 set.smartcase = true
+
+set.termguicolors = true
