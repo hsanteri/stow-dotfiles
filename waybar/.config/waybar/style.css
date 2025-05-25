@@ -116,6 +116,11 @@ button:hover {
     color: @red;
 }
 
+#disk {
+    color: @lavender;
+    border-bottom: 2px solid @lavender;
+}
+
 #battery {
     color: @green;
     border-bottom: 2px solid @green;

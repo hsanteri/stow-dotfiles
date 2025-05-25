@@ -2,7 +2,7 @@
     "position": "top",
     "modules-left": ["hyprland/workspaces", "mpris", "mpd"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["tray", "cpu", "memory", "network", "pulseaudio", "clock"],
+    "modules-right": ["tray", "cpu", "memory", "disk", "disk#2", "network", "pulseaudio", "clock"],
     "clock": {
 	"format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
 	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
@@ -16,6 +16,18 @@
     "memory": {
 	"interval": 30,
 	"format": "{used:0.1f}G/{total:0.1f}G "
+    },
+    "disk": {
+	"interval": 30,
+	"format": "{percentage_used}%/{specific_used:0.2f}G on nvme0n1p2{path} of {specific_total:0.1f}G",
+	"unit": "GiB"
+    },
+    "disk#2": {
+	"disk": "2",
+	"interval": 30,
+	"path": "/home/santtu/",
+	"format":"{percentage_used}%/{specific_used:0.0f}G on nvme0n1p3/home of {specific_total:0.0f}G",
+	"unit": "GiB"
     },
     "network": {
 	"interval": 5,
