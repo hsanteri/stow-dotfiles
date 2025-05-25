@@ -1,0 +1,63 @@
+version = 3
+final_space = true
+
+[upgrade]
+  source = 'cdn'
+  interval = '168h'
+  auto = false
+  notice = false
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+
+  [[blocks.segments]]
+    template = '{{ .UserName }} '
+    foreground = '#f9e2af'
+    type = 'session'
+    style = 'plain'
+
+  [[blocks.segments]]
+    template = '<#ffffff>in</> {{ .Path }} '
+    foreground = '#94e2d5'
+    type = 'path'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      style = 'folder'
+
+  [[blocks.segments]]
+    template = '<#ffffff>on</> {{ .HEAD }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} '
+    foreground = '#f5c2e7'
+    type = 'git'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      branch_icon = ' <#f5c2e7><b> </b></>'
+      fetch_stash_count = true
+
+[[blocks]]
+ type = 'rprompt'
+ alignment = 'right'
+ overflow = 'hidden'
+
+    [[blocks.segments]]
+    type = 'executiontime'
+    style = 'plain'
+    foreground = '#fab387'
+    background = 'transparent'
+    
+    [blocks.segments.properties]
+    threshold = 500
+
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+  newline = true
+
+  [[blocks.segments]]
+    template = '$'
+    foreground = '#a6e3a1'
+    type = 'text'
+    style = 'plain'

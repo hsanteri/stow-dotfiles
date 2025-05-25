@@ -30,4 +30,4 @@ function y() {
     fi
     rm -f -- "$tmp"
 }
-eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/config.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/spaceship.toml)"
